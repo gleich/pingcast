@@ -1,0 +1,34 @@
+{
+  "name": "pingcast",
+  "title": "pingcast",
+  "description": "Ping a server from raycast",
+  "icon": "command-icon.png",
+  "author": "matt",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "ping-server",
+      "title": "Ping Server",
+      "subtitle": "Ping",
+      "description": "Ping a server every 2 seconds with raycast.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}
